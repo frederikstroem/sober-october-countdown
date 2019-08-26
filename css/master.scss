@@ -1,0 +1,78 @@
+@import "colors.scss";
+
+* {
+  font-family: "Helvetica Arial";
+  color: $base07;
+}
+
+p {
+  font-size: 20px;
+}
+
+html {
+  background-color: $base00;
+}
+
+body {
+  margin: 0px;
+}
+
+main {
+  height: 90vh;
+  width: 100%;
+
+  #mainText {
+    font-size: 32px;
+    @media (max-width: 1000px) {
+      font-size: 28px;
+    }
+    @media (max-width: 900px) {
+      font-size: 24px;
+    }
+    @media (max-width: 800px) {
+      font-size: 20px;
+    }
+    @media (max-width: 700px) {
+      font-size: 16px;
+    }
+    @media (max-width: 600px) {
+      font-size: 14px;
+    }
+    @media (max-width: 450px) {
+      font-size: 12px;
+    }
+    @media (max-width: 380px) {
+      font-size: 10px;
+    }
+    @media (max-width: 310px) {
+      font-size: 8px;
+    }
+    display: table;
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+section {
+  background-color: $base02;
+  padding: 5px 15px 10px 15px;
+  h1 {
+    font-size: 30px;
+  }
+  .caution {
+    color: $base08;
+    a {
+      color: $base08;
+    }
+    a:hover {
+      color: $base0F;
+    }
+  }
+}
+
+#about {
+  min-height: 10vh;
+}
