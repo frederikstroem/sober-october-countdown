@@ -8,7 +8,7 @@ var mainText = document.getElementById("mainText");
 mainText.querySelector(":nth-child(1)").innerHTML = "There is";
 
 // Check weather it is october.
-if (currentLocalDate.getMonth() == 10 - 1) {  // -1 because of starting months starting at 0.
+if (currentLocalDate.getMonth() == 10 - 1) {  // getMonth() returns a value between 0-11.
   // It is october.
   // Time to 31th of october.
   var countdownTo = new Date(currentLocalDate.getFullYear(), 10 - 1, 31);
