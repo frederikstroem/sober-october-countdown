@@ -10,19 +10,19 @@ mainText.querySelector(":nth-child(1)").innerHTML = "There is";
 // Check weather it is october.
 if (currentLocalDate.getMonth() == 10 - 1) {  // getMonth() returns a value between 0-11.
   // It is october.
-  // Time to 31th of october.
-  var countdownTo = new Date(currentLocalDate.getFullYear(), 10 - 1, 31);
+  // Time until 1st of november.
+  var countdownTo = new Date(currentLocalDate.getFullYear(), 11 - 1, 1);
   mainText.querySelector(":nth-child(2)").innerHTML = Math.floor(
     (countdownTo.getTime() - currentLocalDate.getTime()) / (1000 * 60 * 60 * 24) + 1
   );
   mainText.querySelector(":nth-child(2)").innerHTML += " day";
-  if (currentLocalDate.getDate() != 30) {
+  if (currentLocalDate.getDate() != 31) {
     mainText.querySelector(":nth-child(2)").innerHTML += "s";
   }
-  mainText.querySelector(":nth-child(3)").innerHTML = "to the last day of October.";
+  mainText.querySelector(":nth-child(3)").innerHTML = "until Sober October ends.";
 } else {
   // It is not october.
-  // Time to 1st of october.
+  // Time until 1st of october.
   var countdownToYear = currentLocalDate.getFullYear();
   if ((currentLocalDate.getMonth() + 1) > 10) {
     // After October.
@@ -37,5 +37,5 @@ if (currentLocalDate.getMonth() == 10 - 1) {  // getMonth() returns a value betw
   if (daysLeft != 1) {
     mainText.querySelector(":nth-child(2)").innerHTML += "s";
   }
-  mainText.querySelector(":nth-child(3)").innerHTML = "to the first day of October.";
+  mainText.querySelector(":nth-child(3)").innerHTML = "until Sober October starts.";
 }

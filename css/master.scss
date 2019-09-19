@@ -23,29 +23,9 @@ main {
 
   #mainText {
     font-size: 32px;
-    @media (max-width: 1000px) {
-      font-size: 28px;
-    }
-    @media (max-width: 900px) {
-      font-size: 24px;
-    }
-    @media (max-width: 800px) {
-      font-size: 20px;
-    }
-    @media (max-width: 700px) {
-      font-size: 16px;
-    }
-    @media (max-width: 600px) {
-      font-size: 14px;
-    }
-    @media (max-width: 450px) {
-      font-size: 12px;
-    }
-    @media (max-width: 380px) {
-      font-size: 10px;
-    }
-    @media (max-width: 310px) {
-      font-size: 8px;
+    font-size: 3vw;
+    @media (min-width: 1000px) {
+      font-size: 32px;
     }
     display: table;
     position: relative;
