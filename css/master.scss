@@ -37,8 +37,6 @@ main {
 }
 
 section {
-  background-color: $base02;
-  padding: 5px 15px 10px 15px;
   h1 {
     font-size: 30px;
   }
@@ -54,5 +52,91 @@ section {
 }
 
 #about {
+  background-color: $base02;
+  padding: 5px 15px 10px 15px;
   min-height: 10vh;
+}
+
+#bottomPanel {
+  text-align: right;
+  font-size: 20px;
+  a {
+    text-decoration: none;
+    color: $base0D;
+  }
+  a:hover {
+    color: $base0C;
+  }
+  a:not(:last-child) {
+    margin-right: 10px;
+  }
+  #softwareVersion {
+    color: $base07;
+  }
+}
+
+/* Sources:
+ * https://stackoverflow.com/a/38543010 (2019-10-02).
+ * https://stackoverflow.com/a/44366154 (2019-10-02).
+ */
+#settingsPanel {
+  * {
+    color: $base00;
+  }
+  background-color: rgba(255, 255, 255, .9);
+  box-shadow: 5px 3px 30px black;
+  padding: 0px 15px 15px 15px;
+
+  position: fixed;
+  width: 290px;
+  height: 210px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
+    background-color: rgba(255, 255, 255, .5);
+    -webkit-backdrop-filter: blur(2em);
+    backdrop-filter: blur(2em);
+  }
+
+  .checkbox {
+    margin-bottom: 5px;
+  }
+
+  .buttons {
+
+    margin-top: 25px;
+
+    a {
+      text-decoration: none;
+      padding: 5px 10px 5px 10px;
+      border-radius: 3px;
+      color: $base07;
+    }
+
+    a:not(:last-child) {
+      margin-right: 5px;
+    }
+
+  }
+}
+#settingsApply {
+  background-color: $base0D;
+}
+#settingsApply:hover {
+  background-color: $base0C;
+}
+#settingsCancel {
+  background-color: $base0F;
+}
+#settingsCancel:hover {
+  background-color: $base08;
+}
+#settingsPersonalLink {
+  background-color: $base01;
+}
+#settingsPersonalLink:hover {
+  background-color: $base02;
 }
