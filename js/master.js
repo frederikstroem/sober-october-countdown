@@ -1,4 +1,4 @@
-const softwareVersion = "v1.2.0";
+const softwareVersion = "v1.2.1";
 
 
 /*
